@@ -1,0 +1,147 @@
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #172b24;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #5ce0a0;
+}
+
+header p {
+    font-size: 1rem;
+    color: #e0e9e4;
+}
+
+/* Main content */
+main {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+    text-align: center;
+    color: #172b24;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+main > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #263b31;
+}
+
+/* Input fields */
+form input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5cf;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #20a568;
+    box-shadow: 0 0 0 3px rgba(32, 165, 104, 0.15);
+}
+
+/* Calculate button */
+form button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background-color: #20a568;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form button:hover {
+    background-color: #178653;
+}
+
+form button:focus-visible {
+    outline: 3px solid #172b24;
+    outline-offset: 3px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* BMI result box */
+#bmiResult {
+    display: block;
+    margin-top: 25px;
+    padding: 25px 20px;
+    background-color: #eaf8f0;
+    border: 2px solid #20a568;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #172b24;
+    overflow-wrap: anywhere;
+    box-shadow: 0 4px 10px rgba(32, 165, 104, 0.12);
+    min-height: 80px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+}
